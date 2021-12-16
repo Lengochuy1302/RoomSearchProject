@@ -24,9 +24,6 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.here.android.mpa.common.GeoCoordinate;
-import com.here.android.mpa.mapping.Map;
-import com.here.android.mpa.mapping.MapMarker;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;

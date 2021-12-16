@@ -42,20 +42,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.here.android.mpa.common.GeoCoordinate;
-import com.here.android.mpa.common.GeoPosition;
-import com.here.android.mpa.common.OnEngineInitListener;
-import com.here.android.mpa.common.PositioningManager;
-import com.here.android.mpa.common.ViewObject;
-import com.here.android.mpa.mapping.Map;
-import com.here.android.mpa.mapping.MapGesture;
-import com.here.android.mpa.mapping.MapMarker;
-import com.here.android.mpa.mapping.MapObject;
-import com.here.android.mpa.mapping.SupportMapFragment;
-import com.here.android.mpa.search.ErrorCode;
-import com.here.android.mpa.search.GeocodeRequest;
-import com.here.android.mpa.search.GeocodeResult;
-import com.here.android.mpa.search.ResultListener;
+
 
 import java.io.File;
 import java.io.IOException;
