@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="@string/StringMainMenuHome"/>
+
+    <item android:id="@+id/nav_find_room"
+        android:icon="@drawable/people"
+        android:title="@string/StringMainMenuFind"/>
+
+    <item android:id="@+id/nav_map"
+        android:icon="@drawable/map"
+        android:title="@string/StringMainMenuMap"/>
+
+    <item android:id="@+id/nav_post_room"
+        android:visible="false"
+        android:icon="@drawable/ic_svg_plus_room"
+        android:title="@string/StringMainMenuPostRoom"/>
+
+    <item android:id="@+id/nav_acount"
+        android:icon="@drawable/user"
+        android:title="@string/StringMainMenuAccount"/>
+</menu>

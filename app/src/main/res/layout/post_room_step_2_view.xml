@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="35dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stringTypePushRoom"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <RadioButton
+                android:checked="true"
+                android:textColor="@drawable/custom_radio_text_color"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/rBtn_type1_push_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stringType1PushRoom" />
+
+            <RadioButton
+                android:textColor="@drawable/custom_radio_text_color"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/rBtn_type2_push_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stringType2PushRoom" />
+
+            <RadioButton
+                android:textColor="@drawable/custom_radio_text_color"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/rBtn_type3_push_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stringType3PushRoom" />
+
+            <RadioButton
+                android:textColor="@drawable/custom_radio_text_color"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/rBtn_type4_push_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stringType4PushRoom" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/stringGendertitle"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <RadioButton
+                android:checked="true"
+                android:textColor="@drawable/custom_radio_text_color"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/rBtn_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stringMalePushRoom" />
+
+            <RadioButton
+                android:textColor="@drawable/custom_radio_text_color"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/rBtn_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stringFemalePushRoom" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stringNumberPushRoom"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_edittext"
+            android:inputType="number"
+            android:id="@+id/edt_number_people_push_room"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_popup_activity"
+            android:gravity="center"
+            android:hint="@string/stringNumberHelpPushRoom"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/stringAreaPushRoom"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_edittext"
+            android:inputType="numberDecimal|numberSigned"
+            android:id="@+id/edt_length_push_room"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_popup_activity"
+            android:gravity="center"
+            android:hint="@string/stringAreaHelpPushRoom"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/stringWidthHelpPushRoom"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_edittext"
+            android:inputType="numberDecimal|numberSigned"
+            android:id="@+id/edt_width_push_room"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_popup_activity"
+            android:gravity="center"
+            android:hint="@string/stringAreaHelpPushRoom"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/stringPricePushRoom"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor_edittext"
+            android:inputType="numberDecimal|numberSigned"
+            android:id="@+id/edt_priceRoom_push_room"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_popup_activity"
+            android:gravity="center"
+            android:hint="@string/stringPriceHelpPushRoom"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tiền điện (nghìn/kg)"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:textCursorDrawable="@drawable/cursor_edittext"
+                android:inputType="numberDecimal|numberSigned"
+                android:id="@+id/edt_electricBill_push_room"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:textColor="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:background="@drawable/custom_popup_activity"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:hint="@string/stringPriceHelpPushRoom" />
+
+            <CheckBox
+                android:textColor="@drawable/custom_radio_text_color"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/chBox_freeElectric_push_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/edt_electricBill_push_room"
+                android:text="@string/stringFreePricePushRoom"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tiền nước (nghìn/m³) "
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:textCursorDrawable="@drawable/cursor_edittext"
+                android:inputType="numberDecimal|numberSigned"
+                android:id="@+id/edt_waterBill_push_room"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_popup_activity"
+                android:hint="@string/stringPriceHelpPushRoom"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_weight="1"/>
+
+            <CheckBox
+                android:textColor="@drawable/custom_radio_text_color"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/chBox_freeWater_push_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/edt_waterBill_push_room"
+                android:text="@string/stringFreePricePushRoom"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tiền internet (nghìn/tháng)"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:textCursorDrawable="@drawable/cursor_edittext"
+                android:inputType="numberDecimal|numberSigned"
+                android:id="@+id/edt_internet_push_room"
+                android:background="@drawable/custom_popup_activity"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:hint="@string/stringPriceHelpPushRoom"
+                android:layout_weight="1"/>
+
+            <CheckBox
+                android:textColor="@drawable/custom_radio_text_color"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/chBox_freeInternet_push_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/edt_internet_push_room"
+                android:text="@string/stringFreePricePushRoom"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tiền giữ xe (nghìn/tháng)"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:textCursorDrawable="@drawable/cursor_edittext"
+                android:inputType="numberDecimal|numberSigned"
+                android:id="@+id/edt_parking_push_room"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:background="@drawable/custom_popup_activity"
+                android:hint="@string/stringPriceHelpPushRoom"
+                android:layout_weight="1"/>
+
+            <CheckBox
+                android:textColor="@drawable/custom_radio_text_color"
+                android:buttonTint="@color/colorPrimary"
+                android:id="@+id/chBox_freeParking_push_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/edt_internet_push_room"
+                android:text="@string/stringFreePricePushRoom"
+                android:layout_weight="2"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_nextStep2_post_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận"
+            android:textAllCaps="false"
+            android:layout_marginTop="45dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_rim"
+            android:layout_marginBottom="20dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

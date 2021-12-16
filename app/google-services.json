@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "390757888989",
+    "firebase_url": "https://aethhouse-332715-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "aethhouse-332715",
+    "storage_bucket": "aethhouse-332715.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390757888989:android:f959440fc5a0c5ccfdfc34",
+        "android_client_info": {
+          "package_name": "com.example.designapptest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390757888989-8mshq5nd3egpnokd0fkd2bmnntfknv9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBT180Mofhtjd8itoeGJtvutYJ5Y5WV5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390757888989-8mshq5nd3egpnokd0fkd2bmnntfknv9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_my_rooms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+                    <LinearLayout android:layout_width="110dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/custom_user_view">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_svg_keyhome_100"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:id="@+id/txt_quantity_room"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="0"
+                            android:gravity="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Phòng đăng"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/custom_user_comment">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_png_view_100"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:id="@+id/txt_quantity_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="0"
+                              android:gravity="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lượt xem"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginTop="0dp"
+                              android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="110dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/custom_user_room"
+                        android:layout_marginLeft="10dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_png_comment_100"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:id="@+id/txt_quantity_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="0"
+                              android:gravity="center"
+                            android:textColor="#FFDFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bình luận"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginTop="0dp"
+                              android:gravity="center"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <!--Processbar-->
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress_bar_my_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+            <!--End Processbar-->
+
+            <LinearLayout
+                android:id="@+id/lnLt_quantity_top_my_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="#70C6EEF3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/stringQuantityTop"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_quantity_my_rooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/recycler_Main_Room"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"></androidx.recyclerview.widget.RecyclerView>
+
+                <!--Processbar-->
+                <ProgressBar
+                    android:id="@+id/progress_bar_load_more_my_rooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp" />
+                <!--End Processbar-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/themnhatro"
+        android:layout_gravity="right"
+        android:layout_marginTop="-75dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_svg_plus_room"
+        app:fab_colorNormal="@color/colorWhile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_size="normal" />
+</LinearLayout>

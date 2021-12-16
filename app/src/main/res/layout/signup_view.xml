@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alosas">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#6A000000"
+        android:padding="30dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+     android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/named"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/faaaas"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:text="ĐĂNG KÝ"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_email_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/faaaa"
+                    android:gravity="center"
+                    android:hint="@string/stringEmailSignUp"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/errmai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Email không được để trống!"
+                    android:textColor="#F43434"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_password_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/faaaa"
+                    android:gravity="center"
+                    android:hint="@string/stringPassSignUp"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/errpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Mật khẩu không được để trống!"
+                    android:textColor="#F43434"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_retype_password_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/faaaa"
+                    android:gravity="center"
+                    android:hint="@string/stringRetypePassSignUp"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/errpass2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Nhập lại mật khẩu không được để trống!"
+                    android:textColor="#F43434"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_name_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/faaaa"
+                    android:gravity="center"
+                    android:hint="Họ và tên"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/errname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Họ và tên không được để trống!"
+                    android:textColor="#F43434"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layougioitinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                   >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/stringGenderSignUp"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad_gender_female_signUp"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/stringGenderMaleSignUp"
+                            android:textColor="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rad_gender_male_signUp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/stringGenderFeMaleSignUp"
+                            android:textColor="@android:color/white" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/errgioitinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Giới tính chưa chọn!"
+                    android:textColor="#F43434"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <EditText
+                android:visibility="gone"
+                    android:id="@+id/edt_phone_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/faaaa"
+                    android:gravity="center"
+                    android:hint="@string/stringPhoneSignUp"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+              />
+
+                <TextView
+             android:id="@+id/vvvv"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="Lưu ý: Sau khi xác minh bạn không thể thay đổi số điện thoại"
+                    android:textColor="#F43434"
+                    android:textSize="10dp"
+                   />
+
+                <LinearLayout
+              android:visibility="gone"
+                    android:id="@+id/linersendotp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <EditText
+                        android:id="@+id/nhapotp"
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:drawableTint="#ABD2D8"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="#FFFFFF"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:paddingTop="10dp"
+                        android:background="@drawable/faaaa"
+                        android:paddingRight="10dp"
+                        android:hint="Mã OTP"
+                        android:paddingBottom="10dp"
+                        />
+                    <Button
+                        android:id="@+id/guilai"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:text="Gửi lại"
+                        android:textColorHint="@color/colorRateMedium"
+                        android:enabled="false"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginRight="1dp"
+                        android:textColor="@color/colorRateMedium"
+                        android:background="@drawable/custom_button_face"
+                        android:layout_height="45dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/errsdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Số điện thoại không được để trống!"
+                    android:textColor="#F43434"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:width="300dp"
+                    android:background="@drawable/custom_button_face"
+                    android:text="Đăng ký"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorRateMedium" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_signUp_Activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:width="300dp"
+                    android:background="@drawable/custom_button_signup"
+                    android:text="Xác minh"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/named"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageViewv"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/logoaaaa"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

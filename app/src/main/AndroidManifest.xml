@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.designapptest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- Quyền cho google map -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".Notification.NotificationApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/abcdefgh"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:roundIcon="@drawable/abcdefgh"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Views.FeedbackScreen"
+            android:exported="false" />
+
+        <service android:name=".Views.MyService" />
+
+        <activity
+            android:name=".Views.HostRoomUser"
+            android:exported="false" />
+        <activity
+            android:name=".Views.AuthPhoneUserNewOTP"
+            android:exported="false" />
+
+        <service
+            android:name=".Mes.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".Views.OTP_Receiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Views.onBarLoading"
+            android:exported="false" />
+        <activity
+            android:name=".Views.PopUpViews"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity
+            android:name=".Views.PopUpComment"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity android:name=".Views.Main_Menu" />
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="JBUIwkLKBrRWU0nhSV9C" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="l5sOXeuVDQU-gBSBG-vo3g" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="aXL2WuYlNG8kPZZmLfwrJ0wVkO/0XMefaai+lYDxgZwrN2Y0StpUgK5smL6q2iquWGmVSvjuIPj0Nf8+OdS2vdG9mqc1jHIpKSASDfgJuzc+IWoFLYUtsPoudyxACK1/sqkQhGkc0TTMWSNkScyVaQN4K1QNOFO2DMxxPFIzU2kiSd6I7rrHFO4c9+JpA4biPhqse7xTdMHwY+wRGrT3an4CLPrO5HViujJp9WpFTtPX6A6OBU+YuhE6JT4hcis/S1DBQw10Vj/5xAn+IvVAi8TD3ijPmHo9vLhFEikS/4fwkAIPAd4QDrolVWqMr6QXfp7wEFl5AyldWOJ2Q4kADQxrnQd3Hd9PfPXhshd5YV/mqOfhKW0ZdkvwtfLgQcv1MSakWDBWanm4yWTkj7FiKIscBCHSP1i1OunKGQGRajo2+crHnQ4WKIPPaMOdffbxtRh85MeiAf/OycTX8DiEOEju3bV4pf5jr74r+GkA578RUMbe0V89KzIiwrhaJiFGQYfwHoZJn6W8j5msx25md2hAoEHismO8fq7pajVROlZZoAnpg3reSkv4XA9JgcYlSLL3IwNVW/HNfMu9SaEyokEQsTXp9PNa4kZtgu5KSmcSIYS2zhcWXC8nOa/W79QAkfyN5vMikcXAWD3FKkL0FulBEAfoDLT/oL6ipHeSvBs=" />
+        <meta-data
+            android:name="INTENT_NAME"
+            android:value="com.example.designapptest" />
+
+        <service
+            android:name="com.here.android.mpa.service.MapService"
+            android:exported="false"
+            android:label="FindRoomMapService">
+            <intent-filter>
+
+                <!-- Vùng nhớ cache lưu trữ map -->
+                <action android:name="com.example.designapptest" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Views.PopupChooseLocation"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.PopMe" />
+        <activity
+            android:name=".Views.location_search"
+            android:noHistory="true" />
+        <activity android:name=".Views.searchView" />
+        <activity android:name=".Views.loadImageScreen" /> <!-- Thêm meta data cho google map -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- End thêm meta data cho google map -->
+        <activity android:name=".Views.directMapRoomDetail" />
+        <activity android:name=".Views.commentAndRateMain" />
+        <activity android:name=".Views.roomManagementModel" />
+        <activity android:name=".Views.detailRoom" />
+        <activity android:name=".Views.favoriteRoomsView" />
+        <activity android:name=".Views.verifiedRoomsView" />
+        <activity android:name=".Views.postRoomAdapter" />
+        <activity android:name=".Views.postRoomAdapterUpdate" />
+        <activity
+            android:name=".Views.LoginView"
+            android:exported="false" />
+        <activity android:name=".Views.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Views.SignUpView" />
+        <activity android:name=".Views.FindRoomAdd" />
+        <activity android:name=".Views.FindRoomDetail" />
+        <activity android:name=".Views.FindRoomFilter" />
+        <activity android:name=".Views.FindRoomMine" />
+        <activity android:name=".Views.personalPage" />
+        <activity android:name=".Views.resetPasswordByEmail" />
+        <activity android:name=".Views.adminView" />
+        <activity android:name=".Views.adminRoomsView" />
+        <activity android:name=".Views.adminHostsView" />
+        <activity android:name=".Views.adminHostRoomsView" />
+        <activity android:name=".Views.adminRoomsWaitForApprovalView" />
+        <activity android:name=".Views.adminReportRoomView" />
+        <activity android:name=".Views.adminReportRoomDetailView" />
+    </application>
+
+</manifest>

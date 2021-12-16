@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Views.searchMapView">
+
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/fragment_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </fragment>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progess_bar_load_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:floatingSearch_searchBarMarginLeft="5dp"
+        app:floatingSearch_searchBarMarginTop="3dp"
+        app:floatingSearch_searchBarMarginRight="60dp"
+        app:floatingSearch_searchHint="Nhập địa chỉ..."
+        app:fab_addButtonColorNormal="#81FFFFFF"
+        app:fab_addButtonColorPressed="#46F7F3F3"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        />
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/btn_menu_expander"
+        android:layout_gravity="right"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_addButtonSize="mini"
+        app:fab_addButtonColorNormal="#81FFFFFF"
+        app:fab_addButtonColorPressed="#46FFFFFF"
+        app:fab_addButtonPlusIconColor="@color/colorGray"
+        app:fab_labelStyle="@style/customTab"
+        app:fab_expandDirection="down">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/mapthuong"
+            app:fab_colorPressed="@color/grayRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_svg_map_24"
+            app:fab_colorNormal="@color/colorWhile"
+            app:fab_title="Bản đồ thường">
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/mapvetinh"
+            app:fab_colorPressed="@color/grayRadio"
+            app:fab_colorNormal="@color/colorWhile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_svg_map_top_24"
+            app:fab_title="Bản đồ vệ tinh"
+            app:fab_size="mini">
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    android:layout_height="354dp">
+    <androidx.cardview.widget.CardView
+        android:animateLayoutChanges="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:cardCornerRadius="10dp"
+        android:visibility="gone"
+        android:id="@+id/cardViewListRoom"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/custom_spinner"
+                android:id="@+id/liner"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorRateMedium"
+                    android:gravity="center_horizontal"
+                    android:text="@string/StringSearchMapViewInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <ProgressBar
+                    android:id="@+id/progess_bar_load_room"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+</FrameLayout>
