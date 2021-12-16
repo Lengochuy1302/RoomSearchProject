@@ -119,7 +119,8 @@ public class accountView extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.thongtin:
-                Toast.makeText(getContext(), "AETH HOUSE version v2.1", Toast.LENGTH_SHORT).show();
+                Intent profile = new Intent(getContext(), ProfileApp.class);
+                startActivity(profile);
                 break;
 
             case R.id.btn_logout:
