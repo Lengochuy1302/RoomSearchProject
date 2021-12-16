@@ -179,7 +179,7 @@ public class SignUpView extends AppCompatActivity implements View.OnClickListene
         final Boolean owner = false;
         final String phone = edt_phone_signUp.getText().toString().trim();
         Boolean gender = true;
-        String verifyphone = phone.substring(1,10) ;
+
 
         if (rad_gender_male_signUp.isChecked()) {
             gender = false;
@@ -219,6 +219,7 @@ public class SignUpView extends AppCompatActivity implements View.OnClickListene
 
 
         if (check == true) {
+            String verifyphone = phone.substring(1,10) ;
             btn_signUp.setVisibility(View.GONE);
             btn_signUp_Activity.setVisibility(View.VISIBLE);
             linersendotp.setVisibility(View.VISIBLE);

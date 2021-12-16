@@ -120,7 +120,7 @@ public class FindRoom extends Fragment implements SwipeRefreshLayout.OnRefreshLi
         menuItemFilter = menu.findItem(R.id.menu_item_filter);
 
         // Set trọ yêu thích ?
-        menuItemFilter.setIcon(R.drawable.ic_svg_filter_white_100);
+        menuItemFilter.setIcon(R.drawable.ic_svg_filter_24);
 
         menuItemFilter.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override

@@ -1,36 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@drawable/canho">
 
-
-    <ImageView
-        android:id="@+id/imageView"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/canho" />
+        android:layout_height="wrap_content"
+        android:background="#63000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#81000000"
-        android:padding="30dp">
-
-        <RelativeLayout
-            android:layout_marginTop="20dp"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/named"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="160dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageViewv"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/logoaaaa"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/named"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="0dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="160dp"
                 android:background="@drawable/faaaas"
                 android:orientation="vertical"
                 android:padding="20dp">
@@ -161,23 +173,11 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/named"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginTop="0dp"
-                android:gravity="center">
 
-                <ImageView
-                    android:id="@+id/imageViewv"
-                    android:layout_width="150dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/logoaaaa"
-                    android:scaleType="fitXY" />
-            </LinearLayout>
+        </LinearLayout>
 
-        </RelativeLayout>
-    </ScrollView>
 
-</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

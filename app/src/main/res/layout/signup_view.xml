@@ -3,24 +3,22 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/alosas">
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:background="#6A000000"
-        android:padding="30dp"
         android:layout_height="match_parent">
         <RelativeLayout
-     android:layout_marginTop="30dp"
+            android:padding="30dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
->
-
+            android:gravity="center">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/named"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="0dp"
+                android:layout_marginBottom="140dp"
                 android:background="@drawable/faaaas"
                 android:orientation="vertical"
                 android:padding="20dp">
@@ -298,6 +296,6 @@
                     android:scaleType="fitXY" />
             </LinearLayout>
         </RelativeLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>
