@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.designapptest.Controller.MainActivityController;
@@ -21,7 +22,7 @@ import com.example.designapptest.R;
 public class adminRoomsWaitForApprovalView extends AppCompatActivity {
     RecyclerView recyclerAdminRoomsWaitForApprovalView;
     MainActivityController mainActivityController;
-
+    RelativeLayout box_search;
     SharedPreferences sharedPreferences;
     String UID;
 
@@ -45,7 +46,8 @@ public class adminRoomsWaitForApprovalView extends AppCompatActivity {
         darkd.setVisibility(View.GONE);
         sharedPreferences = getSharedPreferences(LoginView.PREFS_DATA_NAME, MODE_PRIVATE);
         UID = sharedPreferences.getString(LoginView.SHARE_UID, "n1oc76JrhkMB9bxKxwXrxJld3qH2");
-
+        box_search = findViewById(R.id.box_search);
+        box_search.setVisibility(View.GONE);
         initControl();
     }
 

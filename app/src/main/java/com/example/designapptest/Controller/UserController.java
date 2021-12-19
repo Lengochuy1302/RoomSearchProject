@@ -67,7 +67,7 @@ public class UserController {
 
             @Override
             public void setQuantityTop(int quantity) {
-                lnLtQuantityTopAdminHosts.setVisibility(View.VISIBLE);
+
                 // Hiển thị kết quả trả về
                 txtQuantity.setText(quantity + "");
             }

@@ -72,7 +72,7 @@ public class verifiedRoomsView extends AppCompatActivity {
         // Ẩn progress bar load more.
         progressBarLoadMoreVerifiedRooms.setVisibility(View.GONE);
         // Ẩn layout kết quả trả vể.
-        lnLtQuantityTopVerifiedRooms.setVisibility(View.GONE);
+        lnLtQuantityTopVerifiedRooms.setVisibility(View.VISIBLE);
     }
 
     @Override

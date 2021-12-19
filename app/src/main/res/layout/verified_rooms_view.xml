@@ -27,7 +27,6 @@ android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_below="@+id/toolbar"
-            android:layout_marginTop="10dp"
             android:background="#ffffff"
             android:orientation="horizontal">
 
@@ -59,23 +58,22 @@ android:visibility="gone"
 
 
         <RelativeLayout
+
             android:id="@+id/box_search"
             android:layout_width="match_parent"
-            android:background="@color/colorResultTop"
             android:layout_height="wrap_content"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:layout_gravity="center_horizontal"
             android:layout_below="@+id/grV_location"
-            android:orientation="horizontal">
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <EditText
                 android:id="@+id/edT_search"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/custom_popucp_activity"
+                android:background="@drawable/custom_popup_activity"
                 android:hint="Tìm chủ phòng?"
                 android:paddingLeft="20px"
                 android:paddingRight="20dp"
@@ -87,7 +85,7 @@ android:visibility="gone"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/ic_svg_while_search" />
         </RelativeLayout>
@@ -120,6 +118,7 @@ android:visibility="gone"
         </LinearLayout>
 
         <androidx.core.widget.NestedScrollView
+            android:layout_marginTop="5dp"
             android:id="@+id/nested_scroll_verified_rooms_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -135,11 +134,12 @@ android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="10dp"
                     android:gravity="center"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp">
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp">
 
                 </androidx.recyclerview.widget.RecyclerView>
 
