@@ -8,9 +8,13 @@ import androidx.core.widget.NestedScrollView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
+
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -32,7 +36,7 @@ public class adminHostsView extends AppCompatActivity {
 
     // Số lượng trả về.
     TextView txtQuantity;
-
+    EditText edT_search;
     NestedScrollView nestedScrollAdminHostsView;
     ProgressBar progressBarLoadMoreAdminHosts;
 
@@ -47,13 +51,37 @@ public class adminHostsView extends AppCompatActivity {
         UID = sharedPreferences.getString(LoginView.SHARE_UID, "n1oc76JrhkMB9bxKxwXrxJld3qH2");
 
         initControl();
+
+        edT_search.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.toString()!=null) {
+                    userController.ListHosts(recyclerAdminHostsView, txtQuantity, progressBarAdminHosts,
+                            lnLtQuantityTopAdminHosts, nestedScrollAdminHostsView, progressBarLoadMoreAdminHosts, s.toString());
+                } else {
+                    userController.ListHosts(recyclerAdminHostsView, txtQuantity, progressBarAdminHosts,
+                            lnLtQuantityTopAdminHosts, nestedScrollAdminHostsView, progressBarLoadMoreAdminHosts, "");
+                }
+
+            }
+        });
     }
 
     private void initControl() {
         recyclerAdminHostsView = (RecyclerView) findViewById(R.id.recycler_verified_rooms);
 
         toolbar = findViewById(R.id.toolbar);
-
+        edT_search = findViewById(R.id.edT_search);
         progressBarAdminHosts = (ProgressBar) findViewById(R.id.progress_bar_verified_rooms);
         progressBarAdminHosts.getIndeterminateDrawable().setColorFilter(Color.parseColor("#00DDFF"),
                 android.graphics.PorterDuff.Mode.MULTIPLY);
@@ -86,7 +114,7 @@ public class adminHostsView extends AppCompatActivity {
 
         userController = new UserController(this);
         userController.ListHosts(recyclerAdminHostsView, txtQuantity, progressBarAdminHosts,
-                lnLtQuantityTopAdminHosts, nestedScrollAdminHostsView, progressBarLoadMoreAdminHosts);
+                lnLtQuantityTopAdminHosts, nestedScrollAdminHostsView, progressBarLoadMoreAdminHosts, "");
     }
 
     private void initData() {

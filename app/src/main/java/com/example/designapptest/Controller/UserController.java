@@ -33,9 +33,8 @@ public class UserController {
 
     public void ListHosts(RecyclerView recyclerAdminHostsView, TextView txtQuantity, ProgressBar progressBarAdminHosts,
                                    LinearLayout lnLtQuantityTopAdminHosts, NestedScrollView nestedScrollAdminHostsView,
-                                   ProgressBar progressBarLoadMoreAdminHosts) {
+                                   ProgressBar progressBarLoadMoreAdminHosts, String keysearch) {
         final List<UserModel> userModelList = new ArrayList<>();
-
         //Tạo layout cho danh sách trọ tìm kiếm nhiều nhất
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(context);
         recyclerAdminHostsView.setLayoutManager(layoutManager);
@@ -50,14 +49,14 @@ public class UserController {
         IUserModel iHostModel = new IUserModel() {
             @Override
             public void getListUsers(UserModel valueUser) {
-                // Load ảnh nén
-                valueUser.setCompressionImageFit(Picasso.get().load(valueUser.getAvatar()).fit());
-
-                //Thêm vào trong danh sách chủ trọ
-                userModelList.add(valueUser);
-
-                //Thông báo là đã có thêm dữ liệu
-                adapterRecyclerAdminHosts.notifyDataSetChanged();
+                if (valueUser.getName().contains(keysearch)) {
+                    // Load ảnh nén
+                    valueUser.setCompressionImageFit(Picasso.get().load(valueUser.getAvatar()).fit());
+                    //Thêm vào trong danh sách chủ trọ
+                    userModelList.add(valueUser);
+                }
+                    //Thông báo là đã có thêm dữ liệu
+                    adapterRecyclerAdminHosts.notifyDataSetChanged();
             }
 
             @Override

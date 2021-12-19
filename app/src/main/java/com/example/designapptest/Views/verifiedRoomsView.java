@@ -14,6 +14,7 @@ import android.view.WindowManager;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.designapptest.Controller.MainActivityController;
@@ -24,12 +25,11 @@ public class verifiedRoomsView extends AppCompatActivity {
     MainActivityController mainActivityController;
     SharedPreferences sharedPreferences;
     String UID;
-
+    RelativeLayout box_search;
     Toolbar toolbar;
     GridView grVLocation;
     ProgressBar progressBarVerifiedRooms;
     LinearLayout lnLtQuantityTopVerifiedRooms;
-
     // Số lượng trả về.
     TextView txtQuantity;
 
@@ -45,13 +45,14 @@ public class verifiedRoomsView extends AppCompatActivity {
         UID = sharedPreferences.getString(LoginView.SHARE_UID, "n1oc76JrhkMB9bxKxwXrxJld3qH2");
 
         initControl();
+        box_search.setVisibility(View.GONE);
     }
 
     private void initControl() {
         recyclerMyVerifiedRoom = (RecyclerView) findViewById(R.id.recycler_verified_rooms);
         grVLocation = (GridView) findViewById(R.id.grV_location);
         toolbar = findViewById(R.id.toolbar);
-
+        box_search = findViewById(R.id.box_search);
         progressBarVerifiedRooms = (ProgressBar) findViewById(R.id.progress_bar_verified_rooms);
         progressBarVerifiedRooms.getIndeterminateDrawable().setColorFilter(Color.parseColor("#00DDFF"),
                 android.graphics.PorterDuff.Mode.MULTIPLY);
