@@ -59,7 +59,18 @@ public class AdapterRecyclerRoomPrice extends RecyclerView.Adapter<AdapterRecycl
         if (price == 0) {
             viewHolder.txtNamePriceRoomDetail.setText("Miễn phí");
         } else {
-            viewHolder.txtNamePriceRoomDetail.setText(fmd.format(price) + "đ ");
+            if (roomPriceModel.getRoomPriceID().equals("IDRPT0")) {
+                viewHolder.txtNamePriceRoomDetail.setText(fmd.format(price) + "đ/ m³");
+            } else  if (roomPriceModel.getRoomPriceID().equals("IDRPT1")) {
+                viewHolder.txtNamePriceRoomDetail.setText(fmd.format(price) + "đ/ tháng");
+            } else  if (roomPriceModel.getRoomPriceID().equals("IDRPT3")) {
+                viewHolder.txtNamePriceRoomDetail.setText(fmd.format(price) + "đ/ kg");
+            }  else  if (roomPriceModel.getRoomPriceID().equals("IDRPT2")) {
+                viewHolder.txtNamePriceRoomDetail.setText(fmd.format(price) + "đ/ tháng");
+            } else {
+                viewHolder.txtNamePriceRoomDetail.setText(fmd.format(price) + "đ");
+            }
+
         }
 
 

@@ -94,10 +94,47 @@ public class AdapterRecyclerRoomWaitForApproval extends RecyclerView.Adapter<Ada
             e.printStackTrace();
         }
 
+        int num = roomModel.getRentalCosts();
+        int count = 0;
+        int temp = num;
+        int digit;
+        int so1 = 0, so2 = 0, so3 = 0, so4 = 0;
+        while(num > 0)
+        {
+            num = num / 10;
+            count++;
+        }
+        while(temp > 0)
+        {
+            digit = temp % 10;
+            if (count == 3) {
+                so4 = digit;
+            }
+            if (count == 3) {
+                so3 = digit;
+            }
+            if (count == 2) {
+                so2 = digit;
+            }
+            if (count == 1) {
+                so1 = digit;
+            }
+            temp = temp / 10;
+            count--;
+        }
+
+        if (roomModel.getRentalCosts() < 100000) {
+            viewHolder.txtPrice.setText(so1+""+so2+"k/ phòng ");
+        } else if (100000 <= roomModel.getRentalCosts() && roomModel.getRentalCosts() < 1000000) {
+            viewHolder.txtPrice.setText(so1+""+so2+""+so3+"k/ phòng ");
+        } else if (1000000 <= roomModel.getRentalCosts()) {
+            viewHolder.txtPrice.setText(so1 + "."+ so2 +"tr/ phòng ");
+        }
+
         viewHolder.txtName.setText(roomModel.getName());
         viewHolder.txtMaxNumber.setText(String.valueOf((int) roomModel.getMaxNumber()));
-        viewHolder.txtPrice.setText(String.valueOf(roomModel.getRentalCosts()) + "tr/ phòng");
-        viewHolder.txtArea.setText(roomModel.getLength() + "m" + " x " + roomModel.getWidth() + "m");
+        int dientich = (int) Math.round(roomModel.getLength() * roomModel.getWidth());
+        viewHolder.txtArea.setText(dientich+ "m²");
         viewHolder.txtQuantityComment.setText("0");
         viewHolder.txtType.setText(roomModel.getRoomType());
         viewHolder.txtQuantityViews.setText(String.valueOf(roomModel.getViews()));

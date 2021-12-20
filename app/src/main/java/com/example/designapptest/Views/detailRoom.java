@@ -533,7 +533,7 @@ public class detailRoom extends AppCompatActivity implements ReportRoomDialog.Re
 
     private void setRoomCapacity() {
 
-        txtCapacitySpacious.setText( roomModel.getMaxNumber() - 1 + " người");
+        txtCapacitySpacious.setText( roomModel.getMaxNumber() - 1 + " người -");
         txtCapacityMedium.setText( roomModel.getMaxNumber() + " người");
         txtCapacityCramped.setText( roomModel.getMaxNumber() + 1 + " người +");
     }
