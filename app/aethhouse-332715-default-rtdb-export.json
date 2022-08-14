@@ -1,0 +1,679 @@
+{
+  "Convenients": {
+    "IDC0": {
+      "convenientID": "IDC0",
+      "imageName": "ic_svg_aircondition_24",
+      "name": "Máy lạnh"
+    },
+    "IDC1": {
+      "convenientID": "IDC1",
+      "imageName": "ic_svg_wc_24",
+      "name": "WC riêng"
+    },
+    "IDC10": {
+      "convenientID": "IDC10",
+      "imageName": "ic_svg_wardrobe_24",
+      "name": "Tủ quần áo"
+    },
+    "IDC11": {
+      "convenientID": "IDC11",
+      "imageName": "ic_svg_window_24",
+      "name": "Cửa sổ"
+    },
+    "IDC12": {
+      "convenientID": "IDC12",
+      "imageName": "ic_svg_waterheater_24",
+      "name": "Nước nóng"
+    },
+    "IDC13": {
+      "convenientID": "IDC13",
+      "imageName": "ic_stairs_floor_svgrepo_com",
+      "name": "Gác lửng"
+    },
+    "IDC2": {
+      "convenientID": "IDC2",
+      "imageName": "ic_svg_motobike_24",
+      "name": "Chỗ để xe"
+    },
+    "IDC3": {
+      "convenientID": "IDC3",
+      "imageName": "ic_svg_wifi_24",
+      "name": "Wifi"
+    },
+    "IDC4": {
+      "convenientID": "IDC4",
+      "imageName": "ic_svg_clock_24",
+      "name": "Tự do"
+    },
+    "IDC5": {
+      "convenientID": "IDC5",
+      "imageName": "ic_svg_pet_24",
+      "name": "Thú cưng"
+    },
+    "IDC6": {
+      "convenientID": "IDC6",
+      "imageName": "ic_svg_fridge_24",
+      "name": "Tủ lạnh"
+    },
+    "IDC7": {
+      "convenientID": "IDC7",
+      "imageName": "ic_svg_washmachine_24",
+      "name": "Máy giặt"
+    },
+    "IDC8": {
+      "convenientID": "IDC8",
+      "imageName": "ic_svg_security_24",
+      "name": "An ninh"
+    },
+    "IDC9": {
+      "convenientID": "IDC9",
+      "imageName": "ic_svg_bed_24",
+      "name": "Giường"
+    }
+  },
+  "FavoriteRooms": {
+    "IdBuQDhomSQDbVhoSwmXIPA4npf2": {
+      "-N4Sm92YlzN2WHIh5d93": {
+        "time": "03/07/2022 13:52:15"
+      }
+    }
+  },
+  "FindRoom": {
+    "-N4T24QD7zeBLqHAWX2m": {
+      "convenients": [
+        "IDC1",
+        "IDC3",
+        "IDC4",
+        "IDC9",
+        "IDC10",
+        "IDC5",
+        "IDC11",
+        "IDC2"
+      ],
+      "gender": true,
+      "idFindRoom": "-N4T24QD7zeBLqHAWX2m",
+      "location": [
+        "Quận 1",
+        "Quận 2",
+        "Quận 3",
+        "Quận 4",
+        "Quận 5",
+        "Quận 6",
+        "Quận Thủ Đức",
+        "Quận Gò Vấp"
+      ],
+      "maxPrice": 7.5,
+      "minPrice": 2,
+      "time": "14/06/2022 00:11:16",
+      "user": "lYRYpwCBq8ZXgPtsQZwUeEjVVDW2"
+    },
+    "-N4UiANefPcF9ZkHGz-X": {
+      "convenients": [
+        "IDC1",
+        "IDC3",
+        "IDC4",
+        "IDC9",
+        "IDC5"
+      ],
+      "gender": true,
+      "idFindRoom": "-N4UiANefPcF9ZkHGz-X",
+      "location": [
+        "Quận 1",
+        "Quận 2",
+        "Quận 8",
+        "Quận 9",
+        "Quận 11",
+        "Quận Tân Bình"
+      ],
+      "maxPrice": 8.5,
+      "minPrice": 3,
+      "time": "14/06/2022 07:59:09",
+      "user": "1HQgS47546SKSIbjaOacmmzleGf2"
+    },
+    "-N4UnDpXK3g3lanWakSJ": {
+      "convenients": [
+        "IDC3",
+        "IDC4"
+      ],
+      "gender": true,
+      "idFindRoom": "-N4UnDpXK3g3lanWakSJ",
+      "location": [
+        "Quận 1",
+        "Quận 5"
+      ],
+      "maxPrice": 8,
+      "minPrice": 3,
+      "time": "14/06/2022 08:21:13",
+      "user": "1HQgS47546SKSIbjaOacmmzleGf2"
+    }
+  },
+  "InteractiveComment": {
+    "-N4Sr0Gl7YglaereAFqw": {
+      "IdBuQDhomSQDbVhoSwmXIPA4npf2": {
+        "time": "13/06/2022 23:18:44"
+      },
+      "lYRYpwCBq8ZXgPtsQZwUeEjVVDW2": {
+        "time": "14/06/2022 00:13:07"
+      }
+    },
+    "-N4T2RByQuhbdYOzpfIp": {
+      "lYRYpwCBq8ZXgPtsQZwUeEjVVDW2": {
+        "time": "14/06/2022 00:12:55"
+      }
+    },
+    "-N4UgCfjzJS2UJSxWqLI": {
+      "1HQgS47546SKSIbjaOacmmzleGf2": {
+        "time": "14/06/2022 07:54:51"
+      }
+    }
+  },
+  "LocationRoom": {
+    "Quận 1": {
+      "Tân Định": {
+        "Nguyễn văn cừ": {
+          "-N4T2L22JRAuo196pft6": "-N4T2Idf0jwFUUP-2Eqg"
+        }
+      }
+    },
+    "Quận 12": {
+      "Tân Thới Nhất": {
+        "Phan Van Hon": {
+          "-N4SqafgZwkjkhalwoZ1": "-N4Sq_2baDThCZpEdGxK"
+        }
+      }
+    },
+    "Quận Bình Tân": {
+      "Bình Trị Đông A": {
+        "Lê Quý Đôn": {
+          "-N4UWirrfe5QKiGGpGHK": "-N4UWb1LLHRenw5j0WVj"
+        },
+        "Lê Văn Trỗi": {
+          "-N4SmFlA7Ebg2iQTd2tw": "-N4Sm92YlzN2WHIh5d93"
+        }
+      }
+    }
+  },
+  "ReportedRoom": {
+    "-N4UWb1LLHRenw5j0WVj": {
+      "-N4Uhw2fLOrY4WZhlMxm": {
+        "detail": "",
+        "reason": "Hình ảnh cung cấp khác xa hiện thực",
+        "time": "14/06/2022 07:58:06",
+        "userID": "1HQgS47546SKSIbjaOacmmzleGf2"
+      },
+      "-N4Umty6nzCLqypV_8O6": {
+        "detail": "",
+        "reason": "Hình ảnh cung cấp khác xa hiện thực",
+        "time": "14/06/2022 08:19:48",
+        "userID": "1HQgS47546SKSIbjaOacmmzleGf2"
+      }
+    }
+  },
+  "Room": {
+    "-N4Sm92YlzN2WHIh5d93": {
+      "apartmentNumber": "7/33",
+      "approve": true,
+      "authentication": true,
+      "bad": 0,
+      "city": "Hồ Chí Minh",
+      "county": "Quận Bình Tân",
+      "currentNumber": 0,
+      "describe": " Gần Trung Tâm Xã , Trường Học",
+      "gender": true,
+      "great": 0,
+      "latitude": 10.764657020568848,
+      "length": 20,
+      "longtitude": 106.60205841064453,
+      "maxNumber": 6,
+      "medium": 0,
+      "name": "Nhà Chú Sáu",
+      "owner": "IocAkuW77uSTOGHNvgrFNeUwDOX2",
+      "prettyGood": 0,
+      "rentalCosts": 5000000,
+      "street": "Lê Văn Trỗi",
+      "timeCreated": "13/06/2022 22:57:17",
+      "typeID": "RTID1",
+      "views": 0,
+      "ward": "P.Bình Trị Đông A",
+      "width": 8
+    },
+    "-N4Sq_2baDThCZpEdGxK": {
+      "apartmentNumber": "76",
+      "approve": true,
+      "authentication": false,
+      "bad": 0,
+      "city": "Hồ Chí Minh",
+      "county": "Quận 12",
+      "currentNumber": 0,
+      "describe": "Thay vì thuê căn hộ 1pn 1wc tầm giá 6-7tr cũng được 1 phòng ngủ bằng phòng 1tr7 mình cho thuê , khác cái là bên ngoài chì có thêm 1 phòng tolet , khu bếp và thêm phòng khách nhỏ riêng, còn bên mình là khu bếp và Wc rộng rãi hơn và chung.\n\nĐược trang bị sử dụng tủ lạnh, bếp nấu, máy tắm nóng lạnh, máy giặt chung. Tolet ngoài phòng dùng riêng cho nam hoặc nữ.\n\nCăn hộ view sông nên rất thoáng mát, công viên rộng rãi, lộng gió, wifi 5G mạnh vi vu, hầm xe rộng rãi.",
+      "gender": true,
+      "great": 0,
+      "latitude": 10.82738971710205,
+      "length": 6,
+      "longtitude": 106.62428283691406,
+      "maxNumber": 6,
+      "medium": 0,
+      "name": "Chung cư EraTown",
+      "owner": "IdBuQDhomSQDbVhoSwmXIPA4npf2",
+      "prettyGood": 0,
+      "rentalCosts": 1600000,
+      "street": "Phan Van Hon",
+      "timeCreated": "13/06/2022 23:16:37",
+      "typeID": "RTID2",
+      "views": 0,
+      "ward": "P.Tân Thới Nhất",
+      "width": 9
+    },
+    "-N4T2Idf0jwFUUP-2Eqg": {
+      "apartmentNumber": "12",
+      "approve": true,
+      "authentication": false,
+      "bad": 0,
+      "city": "Hồ Chí Minh",
+      "county": "Quận 1",
+      "currentNumber": 0,
+      "describe": "Phòng đẹp",
+      "gender": true,
+      "great": 0,
+      "latitude": 10.773731231689453,
+      "length": 5,
+      "longtitude": 106.60496520996094,
+      "maxNumber": 4,
+      "medium": 0,
+      "name": "Phòng trọ sinh viên",
+      "owner": "1HQgS47546SKSIbjaOacmmzleGf2",
+      "prettyGood": 0,
+      "rentalCosts": 2000000,
+      "street": "Nguyễn văn cừ",
+      "timeCreated": "14/06/2022 00:12:13",
+      "typeID": "RTID3",
+      "views": 0,
+      "ward": "P.Tân Định",
+      "width": 6
+    },
+    "-N4UWb1LLHRenw5j0WVj": {
+      "apartmentNumber": "12/14",
+      "approve": true,
+      "authentication": false,
+      "bad": 0,
+      "city": "Hồ Chí Minh",
+      "county": "Quận Bình Tân",
+      "currentNumber": 0,
+      "describe": "Diện tích sàn trên 100m2, nhà suốt, gồm 1 lầu. Phù hợp mở văn phòng, công ty, hay kinh doanh nhà hàng, café.\nVị trí ngay trung tâm thành phố, với các tòa nhà văn phòng công ty bao quanh, lượng NVVP di chuyển sầm uất, là địa điểm lựa chọn để nghỉ ngơi, giải trí.\nKhu vực an toàn, an ninh, camera quan sát 24h, người dân thân thiện, văn minh.\nGiá thuê 25tr/ tháng. Cọc 3 tháng. Chủ nhà rất hỗ trợ khách thuê.",
+      "gender": true,
+      "great": 0,
+      "latitude": 10.765135765075684,
+      "length": 10,
+      "longtitude": 106.60154724121094,
+      "maxNumber": 5,
+      "medium": 0,
+      "name": "Nhà Chú Bảy",
+      "owner": "IocAkuW77uSTOGHNvgrFNeUwDOX2",
+      "prettyGood": 0,
+      "rentalCosts": 5000000,
+      "street": "Lê Quý Đôn",
+      "timeCreated": "14/06/2022 07:04:14",
+      "typeID": "RTID3",
+      "views": 0,
+      "ward": "P.Bình Trị Đông A",
+      "width": 9
+    }
+  },
+  "RoomComments": {
+    "-N4Sm92YlzN2WHIh5d93": {
+      "-N4Sr0Gl7YglaereAFqw": {
+        "content": "Trọ ok",
+        "likes": 2,
+        "stars": 9,
+        "time": "13/06/2022 23:18:33",
+        "title": "Phòng ngủ đẹp",
+        "user": "IdBuQDhomSQDbVhoSwmXIPA4npf2"
+      },
+      "-N4UfkY0ItlzLV-j0ir0": {
+        "content": "Trọ đẹp",
+        "likes": 0,
+        "stars": 8,
+        "time": "14/06/2022 07:48:34",
+        "title": "Ok ok",
+        "user": "1HQgS47546SKSIbjaOacmmzleGf2"
+      },
+      "-N4Ufsd3-YhStVNYLV-a": {
+        "content": "10 điểm ",
+        "likes": 0,
+        "stars": 10,
+        "time": "14/06/2022 07:49:08",
+        "title": "Đeo huy chương",
+        "user": "1HQgS47546SKSIbjaOacmmzleGf2"
+      },
+      "-N4UgCfjzJS2UJSxWqLI": {
+        "content": "Đeo huy chương",
+        "likes": 1,
+        "stars": 10,
+        "time": "14/06/2022 07:50:32",
+        "title": "Nhà đẹp và bền",
+        "user": "KtKRyenDZPOrB14JYV8BHC7Vs7X2"
+      },
+      "-N4UgNRTKwbrMJ0vh2ZJ": {
+        "content": "Phòng yên tĩnh hợp sinh viên học tập",
+        "likes": -1,
+        "stars": 10,
+        "time": "14/06/2022 07:51:16",
+        "title": "Đánh giá cao",
+        "user": "KtKRyenDZPOrB14JYV8BHC7Vs7X2"
+      },
+      "-N4ar9Abhrm-eTBqWK4p": {
+        "content": "khá ổn",
+        "likes": 0,
+        "stars": 10,
+        "time": "15/06/2022 17:15:46",
+        "title": "ok",
+        "user": "IdBuQDhomSQDbVhoSwmXIPA4npf2"
+      }
+    },
+    "-N4Sq_2baDThCZpEdGxK": {
+      "-N4T2RByQuhbdYOzpfIp": {
+        "content": "Có bể bơi, giờ giấc tự do, an ninh cao",
+        "likes": 1,
+        "stars": 9,
+        "time": "14/06/2022 00:12:49",
+        "title": "Phòng khá đẹp",
+        "user": "lYRYpwCBq8ZXgPtsQZwUeEjVVDW2"
+      }
+    },
+    "-N4UWb1LLHRenw5j0WVj": {
+      "-N4UmqBlpSYh-GYxe0-k": {
+        "content": "Ok",
+        "likes": 0,
+        "stars": 9,
+        "time": "14/06/2022 08:19:33",
+        "title": "Ok",
+        "user": "1HQgS47546SKSIbjaOacmmzleGf2"
+      }
+    }
+  },
+  "RoomCompressionImages": {
+    "-N4Sm92YlzN2WHIh5d93": {
+      "-N4SmFlA7Ebg2iQTd2tx": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655135837370.png?alt=media&token=560d5db5-f051-4881-b33e-2ce9451578e2"
+    },
+    "-N4Sq_2baDThCZpEdGxK": {
+      "-N4SqafgZwkjkhalwoZ2": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655136997458.png?alt=media&token=8fc45357-f127-451f-895c-c42d306af004"
+    },
+    "-N4T2Idf0jwFUUP-2Eqg": {
+      "-N4T2L23ANs1E_36h9Ie": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655140333586.png?alt=media&token=5017dba7-013d-408d-b343-3a5e14c7b490"
+    },
+    "-N4UWb1LLHRenw5j0WVj": {
+      "-N4UWirrfe5QKiGGpGHL": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655165055061.png?alt=media&token=de8ea6db-715c-40e4-8785-e0222f672c4d"
+    }
+  },
+  "RoomConvenients": {
+    "-N4Sm92YlzN2WHIh5d93": {
+      "-N4SmFkZrewLptLMVsw6": "IDC10",
+      "-N4SmFkar019nR5l8z8E": "IDC2",
+      "-N4SmFkduEsNgHe614S6": "IDC3",
+      "-N4SmFkgApjsS8_roQp4": "IDC0",
+      "-N4SmFki4m1gzSn0Dkju": "IDC1",
+      "-N4SmFkkSWDUSyC7_j4J": "IDC6",
+      "-N4SmFkm9nqNibKgOFnE": "IDC11",
+      "-N4SmFkm9nqNibKgOFnF": "IDC7",
+      "-N4SmFknkZmMAQV1NKPH": "IDC12",
+      "-N4SmFkorytCwLKLV_ya": "IDC4",
+      "-N4SmFkorytCwLKLV_yb": "IDC5",
+      "-N4SmFkorytCwLKLV_yc": "IDC8",
+      "-N4SmFkpqb4es6vXJRzR": "IDC9"
+    },
+    "-N4Sq_2baDThCZpEdGxK": {
+      "-N4SqafaJ9WdNLNPXZBP": "IDC8",
+      "-N4SqafaJ9WdNLNPXZBQ": "IDC9",
+      "-N4SqafbqqqeWFNIimO5": "IDC10",
+      "-N4SqafbqqqeWFNIimO6": "IDC2",
+      "-N4SqafbqqqeWFNIimO7": "IDC3",
+      "-N4SqafbqqqeWFNIimO8": "IDC1",
+      "-N4SqafbqqqeWFNIimO9": "IDC6",
+      "-N4SqafbqqqeWFNIimOA": "IDC11",
+      "-N4SqafbqqqeWFNIimOB": "IDC7",
+      "-N4SqafbqqqeWFNIimOC": "IDC4"
+    },
+    "-N4T2Idf0jwFUUP-2Eqg": {
+      "-N4T2L1Lq-z53aNA8ebu": "IDC9",
+      "-N4T2L1MEfR1akHzQ-j4": "IDC10",
+      "-N4T2L1Neyxzc3wU-8Dm": "IDC3",
+      "-N4T2L1ODesjZFV6AvMn": "IDC1",
+      "-N4T2L1PvWw2FmsYN0cb": "IDC6",
+      "-N4T2L1QczXPAeEc5DQM": "IDC11",
+      "-N4T2L1Rf405th-gWbOn": "IDC7",
+      "-N4T2L1Swi9FxdP8pUPh": "IDC4",
+      "-N4T2L1TMJeNgC6SYQFD": "IDC13"
+    },
+    "-N4UWb1LLHRenw5j0WVj": {
+      "-N4UWirRK9pzGXoInm-T": "IDC10",
+      "-N4UWirSrQnZdKN8NWkR": "IDC2",
+      "-N4UWirSrQnZdKN8NWkS": "IDC3",
+      "-N4UWirTTJI_OsVWIE6I": "IDC0",
+      "-N4UWirUFmmY8vIc2_Dw": "IDC1",
+      "-N4UWirV7l0xtncIyUAJ": "IDC6",
+      "-N4UWirV7l0xtncIyUAK": "IDC11",
+      "-N4UWirX49lIGYpLGXsA": "IDC7",
+      "-N4UWirX49lIGYpLGXsB": "IDC12",
+      "-N4UWirX49lIGYpLGXsC": "IDC4",
+      "-N4UWirZkCVdq4lQccdA": "IDC5",
+      "-N4UWirf-7Zhl0bcnm5j": "IDC8",
+      "-N4UWirhDs1gpnRMtBSI": "IDC9"
+    }
+  },
+  "RoomImages": {
+    "-N4Sm92YlzN2WHIh5d93": {
+      "-N4SmCWMt80Awftw3bib": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655135837328.png?alt=media&token=f30c09cc-5263-4411-b5d6-d84ef65b7c10",
+      "-N4SmCWNWejHArhyY-VY": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655135837278.png?alt=media&token=2c224b6b-65ca-421c-bc5c-e13d28821f9c",
+      "-N4SmFkS-HQjaNs1A-Zm": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655135837349.png?alt=media&token=3bfe43f5-8fc2-4713-b281-315156644f9b",
+      "-N4SmFkWNFCVccETbk6L": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655135837370.png?alt=media&token=560d5db5-f051-4881-b33e-2ce9451578e2"
+    },
+    "-N4Sq_2baDThCZpEdGxK": {
+      "-N4Sq_ulWHpgyBNMYN-1": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655136997446.png?alt=media&token=b8e56013-9433-4b9f-afd6-700c78a3638e",
+      "-N4Sqa4ccMW9g43_W1TB": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655136997430.png?alt=media&token=7898f765-37db-4776-accc-e8463b03938e",
+      "-N4SqaWYTw-oeu4Zi8jz": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655136997451.png?alt=media&token=0fb54376-d963-4a85-ae1f-0f445db6d931",
+      "-N4SqafaJ9WdNLNPXZBO": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655136997458.png?alt=media&token=8fc45357-f127-451f-895c-c42d306af004"
+    },
+    "-N4T2Idf0jwFUUP-2Eqg": {
+      "-N4T2JeLbe--WzmXyexQ": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655140333555.png?alt=media&token=b7090978-d3ab-484f-8a37-d5cf7ebdd016",
+      "-N4T2JgrllAv2me5OQ9g": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655140333569.png?alt=media&token=ac1c9aa9-3dfb-4425-b0df-074ec12a8019",
+      "-N4T2KMI1PQKq74awgFS": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655140333580.png?alt=media&token=9f90e157-bfa7-46d2-a898-cfba4bd5d57f",
+      "-N4T2KMbEWj9kHcVyvCp": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655140333575.png?alt=media&token=3800f946-b413-4e7b-b891-2f4d97ce0b3a",
+      "-N4T2L1KxWOGwFaI9vlX": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655140333586.png?alt=media&token=5017dba7-013d-408d-b343-3a5e14c7b490"
+    },
+    "-N4UWb1LLHRenw5j0WVj": {
+      "-N4UWep7tz3f3_TXgPet": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655165054685.png?alt=media&token=859f7634-23f9-4b3c-92de-54e490be51be",
+      "-N4UWf4WmAiWCud30zBX": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655165055028.png?alt=media&token=bb67ce5c-1ab4-4fab-b66d-7da17f8fc909",
+      "-N4UWif8d_qznkYprOoa": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655165055045.png?alt=media&token=ad05758d-2021-4da9-96e5-bbf819f6a1b0",
+      "-N4UWirRK9pzGXoInm-S": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Images%2F1655165055061.png?alt=media&token=de8ea6db-715c-40e4-8785-e0222f672c4d"
+    }
+  },
+  "RoomPrice": {
+    "-N4Sm92YlzN2WHIh5d93": {
+      "IDRPT0": 2,
+      "IDRPT1": 50,
+      "IDRPT2": 2,
+      "IDRPT3": 5,
+      "IDRPT4": 5000000
+    },
+    "-N4Sq_2baDThCZpEdGxK": {
+      "IDRPT0": 9000,
+      "IDRPT1": 0,
+      "IDRPT2": 0,
+      "IDRPT3": 3000,
+      "IDRPT4": 1600000
+    },
+    "-N4T2Idf0jwFUUP-2Eqg": {
+      "IDRPT0": 2000,
+      "IDRPT1": 80000,
+      "IDRPT2": 0,
+      "IDRPT3": 3000,
+      "IDRPT4": 2000000
+    },
+    "-N4UWb1LLHRenw5j0WVj": {
+      "IDRPT0": 0,
+      "IDRPT1": 0,
+      "IDRPT2": 0,
+      "IDRPT3": 0,
+      "IDRPT4": 5000000
+    }
+  },
+  "RoomPriceType": {
+    "IDRPT0": {
+      "imageName": "ic_svg_water_100",
+      "name": "Tiền nước",
+      "price": 1,
+      "roomPriceID": "IDRPT0"
+    },
+    "IDRPT1": {
+      "imageName": "ic_svg_wifi_100",
+      "name": "Internet",
+      "price": 1,
+      "roomPriceID": "IDRPT1"
+    },
+    "IDRPT2": {
+      "imageName": "ic_svg_motobike_100",
+      "name": "Tiền giữ xe",
+      "price": 1,
+      "roomPriceID": "IDRPT2"
+    },
+    "IDRPT3": {
+      "imageName": "ic_svg_light_100",
+      "name": "Tiền điện",
+      "price": 1,
+      "roomPriceID": "IDRPT3"
+    },
+    "IDRPT4": {
+      "imageName": "ic_svg_motobike_100",
+      "name": "Giá phòng",
+      "price": 2,
+      "roomPriceID": "IDRPT4"
+    }
+  },
+  "RoomTypes": {
+    "RTID0": "Ký túc xá",
+    "RTID1": "Nhà nguyên căn",
+    "RTID2": "Chung cư",
+    "RTID3": "Trọ"
+  },
+  "RoomViews": {
+    "-N4Sm92YlzN2WHIh5d93": {
+      "1HQgS47546SKSIbjaOacmmzleG4f": "14/06/2022 07:45:32",
+      "1HQgS47546SKSIbjaOacmmzleG76": "14/06/2022 07:45:32",
+      "1HQgS47546SKSIbjaOacmmzleGf2": "14/06/2022 08:04:31",
+      "1HQgS47546SKSIbjaOacmmzleGf5": "14/06/2022 07:45:32",
+      "1HQgS47546SKSIbjaOacmmzleGrr": "14/06/2022 07:45:32",
+      "1HQgS47546SKSIbtrOacmmzleGf2": "14/06/2022 07:45:32",
+      "IdBuQDhomSQDbVhoSwmXIPA4npf2": "03/07/2022 13:52:14",
+      "IocAkuW77uSTOGHNvgrFNeUwDOX2": "12/07/2022 13:59:34",
+      "KtKRyenDZPOrB14JYV8BHC7Vs7X2": "14/06/2022 07:58:22",
+      "lYRYpwCBq8ZXgPtsQZwUeEjVVDW2": "14/06/2022 00:13:04"
+    },
+    "-N4Sq_2baDThCZpEdGxK": {
+      "1HQgS47546SKSIbjaOacmmzleGf2": "14/06/2022 08:04:02",
+      "IdBuQDhomSQDbVhoSwmXIPA4npf2": "03/07/2022 13:51:32",
+      "IocAkuW77uSTOGHNvgrFNeUwDOX2": "14/06/2022 08:03:49",
+      "lYRYpwCBq8ZXgPtsQZwUeEjVVDW2": "14/06/2022 00:13:10"
+    },
+    "-N4T2Idf0jwFUUP-2Eqg": {
+      "1HQgS47546SKSIbjaOacmmzleGf2": "14/06/2022 08:20:30",
+      "IdBuQDhomSQDbVhoSwmXIPA4npf2": "15/06/2022 17:15:21",
+      "IocAkuW77uSTOGHNvgrFNeUwDOX2": "14/06/2022 07:41:56",
+      "KtKRyenDZPOrB14JYV8BHC7Vs7X2": "14/06/2022 08:02:05"
+    },
+    "-N4UWb1LLHRenw5j0WVj": {
+      "1HQgS47546SKSIbjaOacmmzleGf2": "14/06/2022 08:19:42"
+    }
+  },
+  "Users": {
+    "1HQgS47546SKSIbjaOacmmzleGf2": {
+      "avatar": "https://lh3.googleusercontent.com/a-/AOh14GjfcvI-klqrG91kalU-PPbonYND0uo618P4NP6O=s96-c",
+      "email": "dathtpk01816@fpt.edu.vn",
+      "gender": true,
+      "name": "Hoang Tuan Dat (FPL TN_K16)",
+      "owner": false,
+      "phoneNumber": "0374176831"
+    },
+    "IdBuQDhomSQDbVhoSwmXIPA4npf2": {
+      "avatar": "https://lh3.googleusercontent.com/a/AATXAJy00sbufQtZUiAm1x_cTMhb_TZ-8NALMbZUfo25=s96-c",
+      "email": "lethinam13022002@gmail.com",
+      "gender": true,
+      "name": "Huy Lê Ngọc",
+      "owner": false,
+      "phoneNumber": "0905196052"
+    },
+    "IocAkuW77uSTOGHNvgrFNeUwDOX2": {
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/aethhouse-332715.appspot.com/o/Users%2Fimage1655168376306.png?alt=media&token=4ed7a60b-ddd6-4001-b5ad-a93ad55b56c3",
+      "email": "tia@gmail.com",
+      "gender": true,
+      "name": "tai",
+      "owner": false,
+      "phoneNumber": "0889461664"
+    },
+    "KtKRyenDZPOrB14JYV8BHC7Vs7X2": {
+      "avatar": "https://lh3.googleusercontent.com/a/AATXAJzC0BnYUgZ7uDeDAdx6PJvUd7s_U76dRKWwQM6N=s96-c",
+      "email": "giangntpk01855@fpt.edu.vn",
+      "gender": true,
+      "name": "Nguyen Truong Giang (FPL TN_K16)",
+      "owner": false,
+      "phoneNumber": "0394487148"
+    },
+    "cwEEwMym4lP5W8A6dw7JEHz6EyL2": {
+      "avatar": "user.png",
+      "email": "admin@gmail.com",
+      "gender": true,
+      "name": "Admin Houses",
+      "owner": false,
+      "phoneNumber": "0905196052"
+    },
+    "lYRYpwCBq8ZXgPtsQZwUeEjVVDW2": {
+      "avatar": "https://lh3.googleusercontent.com/a-/AFdZucoUW9Hudo8CnAnQSy8ICCfAlxvLfF6AcUYdUJOaGA=s96-c",
+      "email": "lengochuyc2130220002@gmail.com",
+      "gender": true,
+      "name": "Huy Lê Ngọc",
+      "owner": false,
+      "phoneNumber": "0528849945"
+    }
+  },
+  "users": {
+    "1HQgS47546SKSIbjaOacmmzleGf2": {
+      "DeviceID": {
+        "ThietBi": {
+          "id": "ThietBi",
+          "tenDevice": "0a22d889b5f11434"
+        }
+      }
+    },
+    "IdBuQDhomSQDbVhoSwmXIPA4npf2": {
+      "DeviceID": {
+        "ThietBi": {
+          "id": "ThietBi",
+          "tenDevice": "cc1bb4ade17a1262"
+        }
+      }
+    },
+    "IocAkuW77uSTOGHNvgrFNeUwDOX2": {
+      "DeviceID": {
+        "ThietBi": {
+          "id": "ThietBi",
+          "tenDevice": "38ff45afa7aab9c1"
+        }
+      }
+    },
+    "KtKRyenDZPOrB14JYV8BHC7Vs7X2": {
+      "DeviceID": {
+        "ThietBi": {
+          "id": "ThietBi",
+          "tenDevice": "46dfbcf7c36cf31f"
+        }
+      }
+    },
+    "lYRYpwCBq8ZXgPtsQZwUeEjVVDW2": {
+      "DeviceID": {
+        "ThietBi": {
+          "id": "ThietBi",
+          "tenDevice": "cc1bb4ade17a1262"
+        }
+      }
+    }
+  }
+}
